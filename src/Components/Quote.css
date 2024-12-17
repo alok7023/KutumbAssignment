@@ -1,0 +1,104 @@
+
+
+.quote-list-container {
+  padding: 20px;
+}
+
+.quote-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual card */
+.quote-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  width: 250px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image container */
+.quote-image-container {
+  position: relative;
+  height: 90%;
+  overflow: hidden;
+}
+
+.quote-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text overlay */
+.quote-text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 4px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Quote details */
+.quote-details {
+  padding: 5px;
+  font-size: 12px;
+  color: #333;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.actionBtn {
+  margin: 1rem 0.5rem; 
+  padding: 0.5rem 1rem;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+  outline: none;
+}
+
+.actionBtn:hover {
+    background-color: #0056b3; 
+  transform: translateY(-2px); 
+}
+
+.actionBtn:active {
+  transform: translateY(0); 
+  background-color: #6d1cb5; 
+}
+
+
+.loadMoreBtn {
+  background-color: #4caf50; 
+}
+
+.loadMoreBtn:hover {
+  background-color: #45a049; 
+}
+
+
+@media screen and (max-width: 480px) {
+  .actionBtn {
+    font-size: 16px; 
+    padding: 0.4rem 0.8rem;
+    margin: 0.5rem 0.25rem;
+  }
+}

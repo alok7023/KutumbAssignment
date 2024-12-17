@@ -1,0 +1,117 @@
+.loginBackground {
+  background-image: url("../../public/background-image.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  justify-content: center;
+  margin: 10% auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.inputField input {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.inputField input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.inputField label {
+  padding: 0.5rem;
+  font-size: 18px;
+}
+
+h2 {
+  color: #fff;
+}
+
+.submitBtn {
+  width: 50%;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  color: black;
+  background: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .Container {
+    width: 95%;
+    margin-top: 5%; /* Reduce top margin */
+  }
+
+  .inputField input {
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+
+  .inputField label {
+    font-size: 16px;
+    padding: 0.25rem;
+  }
+
+  .submitBtn {
+    width: 60%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Container {
+    width: 100%;
+    margin: 2% auto;
+    padding: 0.5rem;
+  }
+
+  .inputField input {
+    font-size: 14px;
+    padding: 0.4rem;
+  }
+
+  .inputField label {
+    font-size: 14px;
+    padding: 0.25rem;
+  }
+
+  .submitBtn {
+    width: 70%;
+    font-size: 14px;
+  }
+}

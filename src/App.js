@@ -1,11 +1,18 @@
-
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LoginPage from "./Components/Login";
+import QuoteListPage from "./Components/QuoteList";
+import CreateQuotePage from "./Components/CreateQuote";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello React APP.</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/quotes" element={<QuoteListPage />} />
+        <Route path="/create" element={<CreateQuotePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

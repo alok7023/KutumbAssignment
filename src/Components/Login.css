@@ -74,7 +74,7 @@ h2 {
 @media screen and (max-width: 768px) {
   .Container {
     width: 95%;
-    margin-top: 5%; /* Reduce top margin */
+    margin-top: 5%;
   }
 
   .inputField input {
